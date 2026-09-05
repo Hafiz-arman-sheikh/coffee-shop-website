@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Wala | Contact</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>☕</span>
+        Coffee Wala
+    </a>
+
+    <button class="menu-button" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="machine.html">Machine</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <button class="buy-button navbar-buy"
+            data-buy="Coffee Wala Product">
+        Buy Now
+    </button>
+
+</header>
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="small-heading">TALK COFFEE WITH US</p>
+
+        <h1>
+            Tell us what
+            <span>you want to build.</span>
+        </h1>
+
+        <p>
+            Need your first machine, a café upgrade or packaging for your
+            coffee brand? Contact Coffee Wala.
+        </p>
+
+    </section>
+
+
+    <section class="section contact-section">
+
+        <div class="contact-information reveal">
+
+            <p class="small-heading">CONTACT</p>
+
+            <h2>
+                Karachi-based,<br>
+                coffee-focused.
+            </h2>
+
+            <div class="contact-list">
+
+                <div>
+                    <strong>Phone / WhatsApp</strong>
+                    <span>+92 300 0000000</span>
+                </div>
+
+                <div>
+                    <strong>Email Address</strong>
+                    <span>hello@coffeewala.pk</span>
+                </div>
+
+                <div>
+                    <strong>Working Hours</strong>
+                    <span>Monday–Saturday: 10am–8pm</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form reveal">
+
+            <div class="form-row">
+
+                <label>
+                    Name
+                    <input type="text"
+                           placeholder="Your name"
+                           required>
+                </label>
+
+                <label>
+                    Phone
+                    <input type="tel"
+                           placeholder="03XX XXXXXXX"
+                           required>
+                </label>
+
+            </div>
+
+            <label>
+                I am interested in
+
+                <select>
+                    <option>Espresso Machine</option>
+                    <option>Coffee Packaging</option>
+                    <option>House Roast Coffee</option>
+                    <option>General Enquiry</option>
+                </select>
+            </label>
+
+            <label>
+                Message
+
+                <textarea
+                    placeholder="Tell us your budget, quantity or required setup."
+                ></textarea>
+            </label>
+
+            <button type="submit" class="buy-button">
+                Prepare Message
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ☕ Coffee Wala
+    </div>
+
+    <p>
+        © <span class="current-year"></span>
+        Coffee Wala. Brew Better.
+    </p>
+
+</footer>
+
+
+<!-- Modal -->
+
+<div class="modal" aria-hidden="true">
+
+    <div class="modal-background" data-close-modal></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close" data-close-modal>×</button>
+
+        <p class="small-heading">QUICK ORDER</p>
+
+        <h2>
+            Buy <span id="modal-product">Coffee</span>
+        </h2>
+
+        <p class="modal-description">
+            Apni order details enter karein.
+        </p>
+
+        <form class="order-form">
+
+            <input type="hidden" id="selected-product">
+
+            <label>
+                Full Name
+                <input type="text" placeholder="Your name" required>
+            </label>
+
+            <label>
+                Phone Number
+                <input type="tel" placeholder="03XX XXXXXXX" required>
+            </label>
+
+            <label>
+                Quantity
+
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </label>
+
+            <button type="submit" class="buy-button">
+                Confirm Details
+            </button>
+
+            <small>
+                Ye demo order form hai.
+            </small>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

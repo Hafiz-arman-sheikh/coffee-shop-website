@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Wala | Machines</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>☕</span>
+        Coffee Wala
+    </a>
+
+    <button class="menu-button" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="machine.html" class="active">Machine</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="buy-button navbar-buy"
+            data-buy="Espresso Machine">
+        Buy Now
+    </button>
+
+</header>
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="small-heading">
+            PRESSURE MEETS PRECISION
+        </p>
+
+        <h1>
+            Machines made for
+            <span>your daily rhythm.</span>
+        </h1>
+
+        <p>
+            Choose a coffee machine that fits your counter, output and budget,
+            from your first home espresso machine to a busy café setup.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="product-grid">
+
+            <article class="product-card tall-card reveal">
+
+                <div class="card-number">01</div>
+                <div class="card-icon">☕</div>
+
+                <h3>Wala Mini</h3>
+
+                <p>
+                    Compact 15-bar home espresso machine with steam wand
+                    and 1.5 litre water tank.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Rs. 48,000</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="Wala Mini Espresso Machine">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card tall-card reveal">
+
+                <div class="card-number">02</div>
+                <div class="card-icon">♨</div>
+
+                <h3>Wala Pro</h3>
+
+                <p>
+                    Professional coffee machine with temperature control,
+                    powerful steam wand and commercial portafilter.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Rs. 135,000</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="Wala Pro Espresso Machine">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card tall-card reveal">
+
+                <div class="card-number">03</div>
+                <div class="card-icon">⚙</div>
+
+                <h3>Bar Station X2</h3>
+
+                <p>
+                    Two-group commercial espresso system designed for busy
+                    cafés, hotels and restaurants.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Price on Request</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="Bar Station X2">
+                        Request
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ☕ Coffee Wala
+    </div>
+
+    <p>
+        © <span class="current-year"></span>
+        Coffee Wala. Brew Better.
+    </p>
+
+</footer>
+
+
+<!-- Modal -->
+
+<div class="modal" aria-hidden="true">
+
+    <div class="modal-background" data-close-modal></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close" data-close-modal>×</button>
+
+        <p class="small-heading">QUICK ORDER</p>
+
+        <h2>
+            Buy <span id="modal-product">Machine</span>
+        </h2>
+
+        <p class="modal-description">
+            Apni order details enter karein.
+        </p>
+
+        <form class="order-form">
+
+            <input type="hidden" id="selected-product">
+
+            <label>
+                Full Name
+                <input type="text" placeholder="Your name" required>
+            </label>
+
+            <label>
+                Phone Number
+                <input type="tel" placeholder="03XX XXXXXXX" required>
+            </label>
+
+            <label>
+                Quantity
+
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </label>
+
+            <button type="submit" class="buy-button">
+                Confirm Details
+            </button>
+
+            <small>
+                Ye demo order form hai.
+            </small>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

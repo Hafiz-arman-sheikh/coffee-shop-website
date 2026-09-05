@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Wala | Packaging</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>☕</span>
+        Coffee Wala
+    </a>
+
+    <button class="menu-button" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="machine.html">Machine</a>
+        <a href="packaging.html" class="active">Packaging</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="buy-button navbar-buy"
+            data-buy="Custom Coffee Packaging">
+        Buy Now
+    </button>
+
+</header>
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="small-heading">
+            FRESH INSIDE — DISTINCT OUTSIDE
+        </p>
+
+        <h1>
+            Packaging that earns
+            <span>a place on the shelf.</span>
+        </h1>
+
+        <p>
+            Protective coffee packaging that keeps your product fresh and
+            gives your coffee brand a professional appearance.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="product-grid">
+
+            <article class="product-card tall-card reveal">
+
+                <div class="card-number">01</div>
+                <div class="card-icon">▤</div>
+
+                <h3>Kraft Valve Pouch</h3>
+
+                <p>
+                    Resealable 250g and 500g coffee pouch with a one-way
+                    degassing valve.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Rs. 85 / Pack</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="Kraft Valve Coffee Pouch">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card tall-card reveal">
+
+                <div class="card-number">02</div>
+                <div class="card-icon">◩</div>
+
+                <h3>Matte Black Pouch</h3>
+
+                <p>
+                    Premium high-barrier coffee pouch with a matte black
+                    custom label-ready finish.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Rs. 110 / Pack</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="Matte Black Coffee Pouch">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card tall-card reveal">
+
+                <div class="card-number">03</div>
+                <div class="card-icon">□</div>
+
+                <h3>Gift Box Set</h3>
+
+                <p>
+                    Premium two-pack presentation box for coffee gifts,
+                    corporate orders and seasonal products.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Rs. 480 / Box</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="Coffee Gift Box Set">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="section process-section">
+
+        <div class="section-heading reveal">
+
+            <div>
+                <p class="small-heading">SIMPLE PROCESS</p>
+                <h2>From idea to packed.</h2>
+            </div>
+
+            <p>
+                Select the size, packaging material, design finish and order
+                quantity.
+            </p>
+
+        </div>
+
+        <div class="process-grid reveal">
+
+            <div>
+                <span>01</span>
+                <h3>Pick Format</h3>
+                <p>Select a pouch, box or complete packaging set.</p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <h3>Choose Finish</h3>
+                <p>Choose kraft, matte black or metallic material.</p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <h3>Add Branding</h3>
+                <p>Add your logo, label and product details.</p>
+            </div>
+
+            <div>
+                <span>04</span>
+                <h3>Approve & Pack</h3>
+                <p>Approve the sample before the final production.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ☕ Coffee Wala
+    </div>
+
+    <p>
+        © <span class="current-year"></span>
+        Coffee Wala. Brew Better.
+    </p>
+
+</footer>
+
+
+<!-- Modal -->
+
+<div class="modal" aria-hidden="true">
+
+    <div class="modal-background" data-close-modal></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close" data-close-modal>×</button>
+
+        <p class="small-heading">QUICK ORDER</p>
+
+        <h2>
+            Buy <span id="modal-product">Packaging</span>
+        </h2>
+
+        <p class="modal-description">
+            Apni packaging order details enter karein.
+        </p>
+
+        <form class="order-form">
+
+            <input type="hidden" id="selected-product">
+
+            <label>
+                Full Name
+                <input type="text" placeholder="Your name" required>
+            </label>
+
+            <label>
+                Phone Number
+                <input type="tel" placeholder="03XX XXXXXXX" required>
+            </label>
+
+            <label>
+                Quantity
+
+                <select>
+                    <option>50</option>
+                    <option>100</option>
+                    <option>250</option>
+                    <option>500</option>
+                </select>
+            </label>
+
+            <button type="submit" class="buy-button">
+                Confirm Details
+            </button>
+
+            <small>
+                Ye demo order form hai.
+            </small>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

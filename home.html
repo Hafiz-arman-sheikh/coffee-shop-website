@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Wala | Home</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>☕</span>
+        Coffee Wala
+    </a>
+
+    <button class="menu-button" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="machine.html">Machine</a>
+        <a href="packaging.html">Packaging</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="buy-button navbar-buy"
+            data-buy="Coffee Wala House Roast">
+        Buy Now
+    </button>
+
+</header>
+
+<main>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                ROASTED FOR REAL COFFEE PEOPLE
+            </p>
+
+            <h1>
+                Your daily
+                <span>ritual,</span>
+                refined.
+            </h1>
+
+            <p class="hero-text">
+                From dependable espresso machines to premium coffee
+                packaging, Coffee Wala brings the complete café experience
+                together in one place.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="buy-button"
+                        data-buy="Coffee Wala House Roast">
+                    Buy House Roast
+                </button>
+
+                <a href="#products" class="outline-button">
+                    Explore Collection
+                </a>
+
+            </div>
+
+            <div class="stats">
+
+                <div>
+                    <strong>24 Hours</strong>
+                    <span>Fresh Dispatch</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Arabica Options</span>
+                </div>
+
+                <div>
+                    <strong>Karachi</strong>
+                    <span>Local Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+
+    <section class="section" id="products">
+
+        <div class="section-heading reveal">
+
+            <div>
+                <p class="small-heading">BUILT AROUND THE BREW</p>
+
+                <h2>
+                    Everything your coffee setup needs.
+                </h2>
+            </div>
+
+            <p>
+                A focused collection for home brewers, cafés and new coffee
+                brands—simple choices, useful guidance and a professional
+                finish.
+            </p>
+
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card reveal">
+
+                <div class="card-number">01</div>
+                <div class="card-icon">♨</div>
+
+                <h3>Espresso Machines</h3>
+
+                <p>
+                    Compact home machines and commercial units designed for
+                    consistent coffee extraction.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>From Rs. 48,000</strong>
+
+                    <a href="machine.html">
+                        View →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal">
+
+                <div class="card-number">02</div>
+                <div class="card-icon">▤</div>
+
+                <h3>Custom Packaging</h3>
+
+                <p>
+                    Coffee valve pouches, labels and gift boxes that protect
+                    freshness and promote your brand.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>From Rs. 85</strong>
+
+                    <a href="packaging.html">
+                        View →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card reveal">
+
+                <div class="card-number">03</div>
+                <div class="card-icon">✦</div>
+
+                <h3>House Roast</h3>
+
+                <p>
+                    A rich chocolate-forward coffee roast with a balanced
+                    finish for espresso and milk drinks.
+                </p>
+
+                <div class="product-footer">
+
+                    <strong>Rs. 2,450 / kg</strong>
+
+                    <button class="small-buy-button"
+                            data-buy="House Roast Coffee — 1kg">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ☕ Coffee Wala
+    </div>
+
+    <p>
+        © <span class="current-year"></span>
+        Coffee Wala. Brew Better.
+    </p>
+
+</footer>
+
+
+<!-- Buy Now Modal -->
+
+<div class="modal" aria-hidden="true">
+
+    <div class="modal-background" data-close-modal></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+                data-close-modal
+                aria-label="Close popup">
+            ×
+        </button>
+
+        <p class="small-heading">QUICK ORDER</p>
+
+        <h2>
+            Buy <span id="modal-product">Coffee</span>
+        </h2>
+
+        <p class="modal-description">
+            Apni order details enter karein.
+        </p>
+
+        <form class="order-form">
+
+            <input type="hidden" id="selected-product">
+
+            <label>
+                Full Name
+                <input type="text"
+                       placeholder="Your name"
+                       required>
+            </label>
+
+            <label>
+                Phone Number
+                <input type="tel"
+                       placeholder="03XX XXXXXXX"
+                       required>
+            </label>
+
+            <label>
+                Quantity
+
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+
+            <button type="submit" class="buy-button">
+                Confirm Details
+            </button>
+
+            <small>
+                Ye demo order form hai. Live orders ke liye WhatsApp number
+                connect karna hoga.
+            </small>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
