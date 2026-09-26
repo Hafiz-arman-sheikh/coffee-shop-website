@@ -1,72 +1,36 @@
-# ☕ Coffee Wala — Coffee Shop Website
+# Coffee Wala
 
-A modern and responsive coffee shop website built using HTML, CSS, and JavaScript.
+A responsive, multi-page coffee shop website built with HTML, CSS, and JavaScript.
 
-This project focuses on creating a clean user interface, responsive design, smooth animations, and interactive JavaScript functionality.
+**[Live demo](https://coffeewalaai.netlify.app/)** · **[Source code](https://github.com/Hafiz-arman-sheikh/coffee-shop-website)**
 
-## 🚀 Live Demo
+## What it includes
 
-Coming Soon
+- Home, Machines, Packaging, and Contact pages
+- Responsive navigation and layout
+- Smooth scrolling and scroll animations
+- Buy Now modal and front-end order form
+- Contact form interface
 
-## 📸 Preview
+The forms are front-end interfaces. This repository does not claim payment processing or a production order backend.
 
-Project screenshot 
+## Tech
 
-<img width="947" height="409" alt="image" src="https://github.com/user-attachments/assets/4a037cca-13f8-4d3b-9b9b-0e20ad780098" />
+HTML5, CSS3, JavaScript, Git, and Netlify.
 
+## Run locally
 
-## ✨ Features
+Clone the repository and open `index.html` in your browser:
 
-- Responsive navigation bar
-- Mobile-friendly design
-- Smooth scrolling
-- Interactive Buy Now modal
-- Order form
-- Contact form
-- Scroll reveal animations
-- Multiple website pages
-- Responsive layout for mobile and tablet
+```bash
+git clone https://github.com/Hafiz-arman-sheikh/coffee-shop-website.git
+cd coffee-shop-website
+```
 
-## 🛠️ Technologies Used
+## Preview
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
-- Netlify
+![Coffee Wala screenshot](https://github.com/user-attachments/assets/4a037cca-13f8-4d3b-9b9b-0e20ad780098)
 
-## 📂 Pages
+## Developer
 
-- Home
-- Machines
-- Packaging
-- Contact
-
-## 🎯 What I Learned
-
-While building this project, I practiced:
-
-- Creating responsive layouts with CSS
-- Working with JavaScript DOM
-- Handling button click events
-- Creating interactive modals
-- Building responsive navigation
-- Working with forms
-- Using Git and GitHub for version control
-
-## 🔮 Future Improvements
-
-- Connect the order form with WhatsApp
-- Add product filtering
-- Add more coffee products
-- Improve form validation
-- Add shopping cart functionality
-
-## 👨‍💻 Developer
-
-**Hafiz Arman Sheikh**
-
-Front-End Web Developer
-
-GitHub: https://github.com/Hafiz-arman-sheikh
+[Hafiz Arman Sheikh](https://github.com/Hafiz-arman-sheikh)
